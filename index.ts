@@ -1,16 +1,16 @@
-
+//CLASSE
 interface Produto {
-    nome: string;
+        nome: string;
     preco: number;
     quantidade: number;
 }
 
-
+//FUNÇÃO
 function calcularTotal(produto: Produto): number {
     return produto.preco * produto.quantidade;
 }
 
-
+//OBJETO
 const meuProduto: Produto = {
     nome: "Caneta",
     preco: 2.5,
@@ -18,6 +18,8 @@ const meuProduto: Produto = {
 };
 
 
+
+//SAIDAS
 console.log(`Produto: ${meuProduto.nome}`);
 console.log(`Preço unitário: R$ ${meuProduto.preco.toFixed(2)}`);
 console.log(`Quantidade: ${meuProduto.quantidade}`);
