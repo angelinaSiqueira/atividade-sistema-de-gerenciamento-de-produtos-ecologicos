@@ -30,6 +30,3 @@ function somar(a: number, b:number): number {
 
 console.log(somar(2,4));
 
-class conta_corrente implements conta_bancaria{
-    
-}
