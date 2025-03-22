@@ -1,0 +1,1 @@
+console.log("1-add produto\n2-remover produto\n 3-editar produto\n4-listar produtos")
