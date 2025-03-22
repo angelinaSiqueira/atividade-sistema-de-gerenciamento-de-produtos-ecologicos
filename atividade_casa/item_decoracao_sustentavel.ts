@@ -9,4 +9,27 @@ class item_decoracao_sustentavel implements produto_ecologico {
         altura: number;
         profundidade: number;
     }
+
+    constructor(nome: string, preco: number, material: string, dimensoes: { largura: number, altura: number, profundidade: number }) {
+        this.nome = nome;
+        this.preco = preco;
+        this.material = material;
+        this.dimensoes = dimensoes;
+    }
+
+    get_nome(): string {
+        return this.nome;
+    }
+
+    set_nome(nome1: string): void {
+        this.nome = nome1;
+    }
+
+    get_preco(): number {
+        return this.preco;
+    }
+
+    set_preco(preco1: number): void {
+        this.preco = preco1;
+    }
 }
