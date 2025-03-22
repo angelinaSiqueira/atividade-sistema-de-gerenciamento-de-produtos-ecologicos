@@ -4,13 +4,13 @@ class alimneto_organico implements produto_ecologico {
     nome: string;
     preco: number;
     data_validade: Date;
-    ingrediente: string[];
+    ingredientes: string[];
 
     constructor(nome: string, preco: number, data_validade: Date, ingredientes: string[]) {
         this.nome = nome;
         this.preco = preco;
         this.data_validade = data_validade;
-        this.ingrediente = ingredientes;
+        this.ingredientes = ingredientes;
     }
 
     get_nome(): string {
@@ -27,6 +27,22 @@ class alimneto_organico implements produto_ecologico {
 
     set_preco(preco1: number): void {
         this.preco = preco1;
+    }
+
+    get_data_validade(): Date {
+        return this.data_validade;
+    }
+
+    set_data_validade(datav1: Date): void {
+        this.data_validade = datav1;
+    }
+
+    get_ingredientes(): string[] {
+        return this.ingredientes;
+    }
+
+    set_ingredientes(ingredientes1: string[]): void {
+        this.ingredientes = ingredientes1;
     }
 
 }
