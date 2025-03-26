@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/Ian0308/atividade-sistema-de-gerenciamento-de-produtos-ecologicos#readme",
   "dependencies": {
-    "ts-node": "^10.9.2"
-  }
+    "node": "^20.19.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {}
 }
