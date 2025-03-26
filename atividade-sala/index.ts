@@ -38,3 +38,5 @@ function somar(a: number, b: number): number {
 console.log(somar(3,4)); //Saída 7
 //console.log(somar('3','4')); Erro de tipo de compilação 
 
+//git commit -m "criado index"
+//git push origin "nome da brach"
