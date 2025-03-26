@@ -1,22 +1,25 @@
-let nome : string = "Alexia";
+let numero : number = 15
+console.log(numero);
 
-console.log(nome)
+let nome : String = "Kauan"
+console.log(nome);
 
-var pi = 3.14;
-
-const idade: number = 16;
-
-function saudacao(nome, idade){
-
-    console.log("Eu me chamo ".concat(nome, " e tenho ".concat(idade, "anos") ));
+function saudacao(nome:string, idade:number){
+    console.log('Ola meu nome é ${nome} e tenhop ${idade} anos');
 }
 
-var pessoa = {
-    nome: "Aline",
-    idade: 11,
-    cidade: "Salvador",
-    apresentar: function(){
-        return "O meu nome"
+const pessoa2 = {
+    nome:"Alice",
+    idade:15,
+    cidade:"Salvador",
+    apresentar: function():string{
+        return `Ola meu nome é ${this.nome}, e tenho ${this.idade} e sou da cidade de ${this.cidade}`
     }
+    
+    
+}
+console.log(pessoa2.apresentar());
 
+function somar(a: number, b:number): number {
+    return a + b;
 }
