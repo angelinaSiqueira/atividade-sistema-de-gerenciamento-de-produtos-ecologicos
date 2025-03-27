@@ -1,6 +1,6 @@
 import {Produtoecologico} from "./Prdotudo-ecologico";
 
-class ProdutolimpezaBiodegradavel{
+export class ProdutolimpezaBiodegradavel{
     volume:number
     nome:String
     preco: number
@@ -10,5 +10,12 @@ class ProdutolimpezaBiodegradavel{
         this.volume = volume;
         this.nome = nome;
         this.preco = preco;
+    }
+
+    exibir(){
+        console.log("Nome:" + this.nome + "/ preço: " + this.preco + "/ volume: " + this.volume)
+    }
+    cadastrar():void{
+   console.log("foi cadastrado o produto" + this.nome)
     }
 }
