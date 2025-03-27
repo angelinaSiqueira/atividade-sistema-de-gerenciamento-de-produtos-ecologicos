@@ -1,6 +1,6 @@
 import {ProdutoEcologico} from "./ProdutoEcologico";
 
-class AlimentoOrganico implements ProdutoEcologico {
+export class AlimentoOrganico implements ProdutoEcologico {
   dataValidade: Date;
   ingredientes: string[];
   nome: string;
