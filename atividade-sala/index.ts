@@ -1,3 +1,5 @@
+//esse código é apenas os exemplos passados em sala para apredizado e não possui nada da atividade
+
 let numero:Number = 10;
 
 console.log(numero);
