@@ -9,7 +9,28 @@ class ProdutoLimpezaBiodegradavel implements ProdutosEcologicos {
         this.preco = preco;
         this.volume = volume;
     }
-
+    cadastrar(): void {
+        console.log(`
+            Cadastrando Produto de Limpeza:
+            Nome: ${this.nome}
+            Preço: R$${this.preco.toFixed(2)}
+            Volume: ${this.volume}ml
+            `);
+    }
+    exibir(): void {
+        console.log(`PRODUTO DE LIMPEZA BIODEGRADÁVEL:
+            Nome: ${this.nome}
+            Preço: R$${this.preco.toFixed(2)}
+            Volume: ${this.volume}ml`
+        )
+    }
 }
-//depois eu finalizo essa jabirasca
-//const ProdutoDeLimpezaDoBAO 
+
+const detergente = new ProdutoLimpezaBiodegradavel(
+    "Detergente Eco",
+    12.90,
+    500,
+);
+
+detergente.cadastrar();
+detergente.exibir();
