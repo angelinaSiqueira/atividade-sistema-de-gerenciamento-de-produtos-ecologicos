@@ -10,10 +10,13 @@ class ItemDecoracaoSusentavel implements ProdutoEcologico {
 
 
     }
-    exibir(): string{
-        return console.log(`nome prod: ${this.nome} preco: ${this.preco} dimencoes: ${this.dimensoes}`);
+    exibir():void {
+        console.log(`nome prod: ${this.nome} preco: ${this.preco} dimencoes: ${this.dimensoes}`);
     }
-    
+    inserir(): void{
+        console.log("O item de decoracao sustentavel foi inserido")
+    }
+
     constructor(nome: string, preco: number, dimensoes: { largura: number, altura: number, profundidade: number }) {
         this.nome = nome;
         this.preco = preco;
