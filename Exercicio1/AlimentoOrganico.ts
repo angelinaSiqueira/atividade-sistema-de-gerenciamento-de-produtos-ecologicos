@@ -21,11 +21,12 @@ class AlimentoOrganico implements ProdutoEcologico {
     }
 
     cadastrar(): void {
-        
+        console.log(`O produto ${this.nome} foi cadastrado!`)
     }
 
 }
 
-const Banana = new AlimentoOrganico("Banana",1,new Date(2025-3-30),["banana"]);
+const Banana = new AlimentoOrganico("Banana",1,new Date("2025-3-30"),["banana"]);
 Banana.exibirDetalhes();
+Banana.cadastrar();
 

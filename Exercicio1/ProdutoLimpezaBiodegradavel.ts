@@ -18,10 +18,11 @@ class ProdutoLimpezaBiodegradavel implements ProdutoEcologico{
     }
 
     cadastrar(): void {
-        
+        console.log(`O produto ${this.nome} foi cadastrado!`)    
     }
 
 }
 
 const OMO = new ProdutoLimpezaBiodegradavel("OMO",25,3);
 OMO.exibirDetalhes();
+OMO.cadastrar();

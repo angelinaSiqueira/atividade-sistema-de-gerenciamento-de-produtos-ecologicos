@@ -21,10 +21,11 @@ class ItemDecoracaoSustentavel implements ProdutoEcologico{
     }
 
     cadastrar(): void {
-        
+        console.log(`O produto ${this.nome} foi cadastrado!`)
     }
 
 }
 
 const Grama = new ItemDecoracaoSustentavel("Grama", 25, "vegetal",45, 45, 5);
 Grama.exibirDetalhes();
+Grama.cadastrar();
