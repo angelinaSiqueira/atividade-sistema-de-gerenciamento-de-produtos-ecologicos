@@ -1,0 +1,20 @@
+{
+  "name": "atividade-sistema-de-gerenciamento-de-produtos-ecologicos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasBorges-1/atividade-sistema-de-gerenciamento-de-produtos-ecologicos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasBorges-1/atividade-sistema-de-gerenciamento-de-produtos-ecologicos/issues"
+  },
+  "homepage": "https://github.com/LucasBorges-1/atividade-sistema-de-gerenciamento-de-produtos-ecologicos#readme",
+  "description": ""
+}
