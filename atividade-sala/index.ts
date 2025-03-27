@@ -1,25 +1,15 @@
-let numero : number = 15
-console.log(numero);
+import { ItemDecoracaoSustentavel } from "./ItemDecoracaoSustentavel";
+import { AlimentoOrganico } from "./AlimentoOrganico";
+import { ProdutoLimpezaBiodegrdavel } from "./ProdutoLimpezaBiodegradavel";
 
-let nome : String = "Kauan"
-console.log(nome);
+const a = new ProdutoLimpezaBiodegrdavel(15.5, "Qboa", 12);
+a.exibir;
+a.cadastrar;
 
-function saudacao(nome:string, idade:number){
-    console.log('Ola meu nome é ${nome} e tenhop ${idade} anos');
-}
+const b = new AlimentoOrganico(new Date(2025,2,4), ['Tomate, Cebola, alho'], 'molho', 15.60);
+b.exibir;
+b.cadastrar;
 
-const pessoa2 = {
-    nome:"Alice",
-    idade:15,
-    cidade:"Salvador",
-    apresentar: function():string{
-        return `Ola meu nome é ${this.nome}, e tenho ${this.idade} e sou da cidade de ${this.cidade}`
-    }
-    
-    
-}
-console.log(pessoa2.apresentar());
-
-function somar(a: number, b:number): number {
-    return a + b;
-}
+const c = new ItemDecoracaoSustentavel('madeira', {largura: 14, altura: 10, profundidade: 12}, 'cabeceira', 500);
+c.exibir;
+c.cadastrar;

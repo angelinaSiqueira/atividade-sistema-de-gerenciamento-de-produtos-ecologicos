@@ -1,6 +1,6 @@
 import { ProdutoEcologico} from "./ProdutoEcologico";
 
-class AlimentoOrganico implements ProdutoEcologico{
+export class AlimentoOrganico implements ProdutoEcologico{
     dataValidade: Date;
     ingredentes: string[]; 
     nome: string;
@@ -13,4 +13,14 @@ class AlimentoOrganico implements ProdutoEcologico{
         this.nome = nome;
         this.preco = preco;
     }
+
+
+    exibir(){
+        console.log("nome: " + this.nome + ", preço: " + this.preco + ", data de validade: " + this.dataValidade + ", ingredientes: " + this.ingredentes)
+    }
+
+    cadastrar(): void{
+        console.log("Produto cadastrado com sucesso: " + this.nome)
+    }
 }
+
