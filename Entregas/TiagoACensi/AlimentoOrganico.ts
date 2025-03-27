@@ -5,12 +5,15 @@ class AlimentoOrganico implements ProdutoEcologico {
     preco: number;
     dataValidade: Date;
     ingredientes: string[];
+    aliementoorg: Array<AlimentoOrganico> = [];
 
     exibir(): void {
         console.log(`nome prod: ${this.nome} preco: ${this.preco} data: ${this.dataValidade} ingredientes ${this.ingredientes}`);
     }
-    inserir(): void{
-        console.log("O alimento organico foi inserido")
+    
+    inserir(aliemento: AlimentoOrganico): void {
+        this.aliementoorg.push(aliemento);
+        console.log("O alimento organico foi inserido");
     }
 
     constructor(nome: string, preco: number, dataValidade: Date, ingredientes: string[]) {
@@ -21,5 +24,5 @@ class AlimentoOrganico implements ProdutoEcologico {
     }
 }
 const ao = new AlimentoOrganico("maca", 4, new Date(), ["maca"]);
-ao.inserir;
-ao.exibir;
+ao.inserir(ao);
+ao.exibir();

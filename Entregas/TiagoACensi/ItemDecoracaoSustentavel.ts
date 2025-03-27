@@ -7,14 +7,18 @@ class ItemDecoracaoSusentavel implements ProdutoEcologico {
         largura: number;
         altura: number;
         profundidade: number;
-
-
     }
-    exibir():void {
+
+    itemdecsus: Array<ItemDecoracaoSusentavel> = [];
+
+    exibir(): void {
+
         console.log(`nome prod: ${this.nome} preco: ${this.preco} dimencoes: ${this.dimensoes}`);
     }
-    inserir(): void{
-        console.log("O item de decoracao sustentavel foi inserido")
+
+    inserir(item: ItemDecoracaoSusentavel): void {
+        this.itemdecsus.push(item);
+        console.log("O item de decoracao sustentavel foi inserido");
     }
 
     constructor(nome: string, preco: number, dimensoes: { largura: number, altura: number, profundidade: number }) {
@@ -25,4 +29,6 @@ class ItemDecoracaoSusentavel implements ProdutoEcologico {
 
     }
 }
-const ids = new ItemDecoracaoSusentavel("guarda-chuva", 30,{largura:4, altura: 6, profundidade: 12} );
+const ids = new ItemDecoracaoSusentavel("guarda-chuva", 30, { largura: 4, altura: 6, profundidade: 12 });
+ids.inserir(ids);
+ids.exibir();
