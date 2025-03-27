@@ -1,6 +1,6 @@
 import {ProdutoEcologico} from "./ProdutoEcologico";
 
-class ItemDecoracaoSustentavel implements ProdutoEcologico {
+export class ItemDecoracaoSustentavel implements ProdutoEcologico {
   material: string;
   nome: string;
   preco: number;
