@@ -1,6 +1,6 @@
-import { produto_ecologico } from "./produto_ecologico";
+import { ProdutoEcologico } from "./ProdutoEcologico";
 
-class item_decoracao_sustentavel implements produto_ecologico {
+export class ItemDecoracaoEcologica implements ProdutoEcologico {
     nome: string;
     preco: number;
     material: string;
@@ -9,6 +9,8 @@ class item_decoracao_sustentavel implements produto_ecologico {
         altura: number;
         profundidade: number;
     }
+
+    static itens: ItemDecoracaoEcologica[] = [];
 
     constructor(nome: string, preco: number, material: string, dimensoes: { largura: number, altura: number, profundidade: number }) {
         this.nome = nome;
@@ -48,4 +50,21 @@ class item_decoracao_sustentavel implements produto_ecologico {
     set_dimensoes(dimensoes1: { largura: number, altura: number, profundidade: number }) {
         this.dimensoes = dimensoes1;
     }
+
+    cadastrar(): void {
+        if (ItemDecoracaoEcologica.itens.push(this)) {
+            console.log(`Produto "${this.nome}" cadastrado`)
+        }
+        else {
+            console.log(`falha ao cadastrar`)
+        }
+    }
+
+    listar(): ItemDecoracaoEcologica[] {
+        for (const item of ItemDecoracaoEcologica.itens) {
+            console.log(`nome: ${this.nome}, preco: ${this.preco}, material: ${this.material}, dimensoes: ${this.dimensoes}`)
+        }
+        return ItemDecoracaoEcologica.itens
+    }
 }
+

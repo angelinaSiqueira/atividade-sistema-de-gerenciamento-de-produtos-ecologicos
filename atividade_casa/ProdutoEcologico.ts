@@ -1,4 +1,4 @@
-export interface produto_ecologico{
+export interface ProdutoEcologico {
     nome: string;
     preco: number;
 
