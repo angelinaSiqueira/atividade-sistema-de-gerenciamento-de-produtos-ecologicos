@@ -1,6 +1,6 @@
 import { produtoEcologico } from "./ProdutoEcologico";
 
-class ItemDecoracaoSustentavel implements produtoEcologico {
+export class ItemDecoracaoSustentavel implements produtoEcologico {
     nome: string;
     preco: number;
     material: string;
@@ -11,24 +11,20 @@ class ItemDecoracaoSustentavel implements produtoEcologico {
         profundidade: number;
     };
 
-    constructor(preco: number, nome: string, material: string, largura: number, altura: number, profundidade: number) {
+    constructor(preco: number, nome: string, material: string, dimensoes:{largura: number, altura: number, profundidade: number}){
         this.nome = nome;
         this.preco = preco;
         this.material = material;
-        this.dimensoes = {
-            largura: largura,
-            altura: altura,
-            profundidade: profundidade
-        };
+        this.dimensoes= dimensoes;
     }
 
-    toString(nome: string, preco: number, material: string, largura: number, altura: number, profundidade: number) {
-        console.log(`Nome: ${nome}, ${preco} , material: ${material}, dimensões: ${largura} x ${altura} x ${profundidade}`)
+    toString() {
+        return(`Nome: ${this.nome}, ${this.preco} , material: ${this.material}, dimensões: ${this.dimensoes.largura} x ${this.dimensoes.altura} x ${this.dimensoes.profundidade}`)
 
     }
 
      cadastrar(){
-        console.log("foi cadastrado o produto" + this.nome)
+        return "Foi cadastrado o produto: " + this.nome
     }
 
 }

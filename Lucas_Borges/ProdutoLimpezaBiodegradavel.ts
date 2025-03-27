@@ -1,6 +1,6 @@
 import { produtoEcologico } from "./ProdutoEcologico";
 
-class ProdutoLimpezaBiodegradavel implements produtoEcologico{
+export class ProdutoLimpezaBiodegradavel implements produtoEcologico{
     nome: string;
     preco: number;
     volume:number;
@@ -13,8 +13,12 @@ class ProdutoLimpezaBiodegradavel implements produtoEcologico{
         
     }
 
-    toString(nome:string,preco:number,volume:number){
-        console.log(`Nome: ${nome}, ${preco} ,volume: ${volume}`)
+    toString(){
+        return `Nome: ${this.nome}, ${this.preco} ,volume: ${this.volume}`
+    }
+
+    cadastrar(){
+        return "Foi cadastrado o produto: " + this.nome
     }
 
 
