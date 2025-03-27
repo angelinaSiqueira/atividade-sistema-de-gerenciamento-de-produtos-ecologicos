@@ -1,0 +1,17 @@
+import { ProdutosEcologicos } from "./ProdutoEcologico";
+
+class AlimentoOrganico implements ProdutosEcologicos {
+    nome: string;
+    preco: number;
+    dataValidade: Date;
+    ingredientes: string[];
+
+    constructor(nome:string, preco:number,dataValidade: Date, ingredientes: string[]) {
+        this.nome=nome;
+        this.preco=preco
+        this.dataValidade = dataValidade;
+        this.ingredientes = ingredientes;
+    }
+
+
+}
