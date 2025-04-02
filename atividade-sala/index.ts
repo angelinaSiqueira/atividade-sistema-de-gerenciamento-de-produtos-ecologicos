@@ -1,4 +1,4 @@
-//esse código é apenas os exemplos passados em sala para apredizado e não possui nada da atividade
+//esse código é apenas os exemplos passados em sala para apredizado e não possui nada da atividade em sala
 
 let numero:Number = 10;
 

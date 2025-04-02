@@ -3,7 +3,7 @@ export interface ProdutoEcologico {
     preco: number;
   }
   
-  class AlimentoOrganico implements ProdutoEcologico {
+  export class AlimentoOrganico implements ProdutoEcologico {
     nome: string;
     preco: number;
     dataValidade: Date;
@@ -16,8 +16,9 @@ export interface ProdutoEcologico {
       this.ingredientes = ingredientes;
     }
   }
+   
   
-  class ProdutoLimpezaBiodegradavel implements ProdutoEcologico {
+  export class ProdutoLimpezaBiodegradavel implements ProdutoEcologico {
     nome: string;
     preco: number;
     volume: number;
@@ -29,7 +30,7 @@ export interface ProdutoEcologico {
     }
   }
   
-  class ItemDecoracaoSustentavel implements ProdutoEcologico {
+  export class ItemDecoracaoSustentavel implements ProdutoEcologico {
     nome: string;
     preco: number;
     material: string;
@@ -54,6 +55,12 @@ export interface ProdutoEcologico {
     }
   }
   
+  const alimento = new AlimentoOrganico("Maça",4.32,new Date("2025-05-01"),"Maça");
+  const produtoLimpeza = new ProdutoLimpezaBiodegradavel("Detergente Bio", 12.99, 500);
+  const itemDecoracao = new ItemDecoracaoSustentavel("Vaso Reciclado", 25.5, "Cerâmica", 10, 15, 10);
+
+console.log(alimento, produtoLimpeza, itemDecoracao);
+
   
 
   
